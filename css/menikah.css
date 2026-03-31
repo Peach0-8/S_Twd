@@ -570,7 +570,7 @@ body.preloader-site {
 
 
 .foto1 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/beatriz-perez-moya-M2T1j-6Fn8w-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.356), rgba(48, 47, 47, 0.24)), url("../image/08.png");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
@@ -579,7 +579,7 @@ body.preloader-site {
 
 
 .foto2 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/evelina-friman-hw_sKmjb0ns-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.356), rgba(48, 47, 47, 0.24)), url("../image/07.png");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
@@ -587,7 +587,7 @@ body.preloader-site {
 }
 
 .foto3 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/jeremy-wong-weddings-464ps_nOflw-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.356), rgba(48, 47, 47, 0.24)), url("../image/04.png");
   background-size: cover;
   background-position: top;
   background-repeat:no-repeat;
@@ -595,7 +595,7 @@ body.preloader-site {
 }
 
 .foto4 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/jeremy-wong-weddings-K8KiCHh4WU4-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.356), rgba(48, 47, 47, 0.24)), url("../image/05.png");
   background-size: cover;
   background-position: top;
   background-repeat:no-repeat;
@@ -603,7 +603,7 @@ body.preloader-site {
 }
 
 .foto5 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/nathan-dumlao-5BB_atDT4oA-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.356), rgba(48, 47, 47, 0.24)), url("../image/09.png");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
@@ -612,7 +612,7 @@ body.preloader-site {
 
 
 .foto6 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/samantha-gades-x40Q9jrEVT0-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.356), rgba(48, 47, 47, 0.24)), url("../image/03.png");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
@@ -622,22 +622,26 @@ body.preloader-site {
 
 
 .title-foto {
+  font-family: 'Noto Sans Lao', sans-serif !important;
   font-size: 18pt;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-align: left;
-  color: white;
+  color: #F4E2E2;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 
 .subtitle-foto {
+  font-family: 'Noto Sans Lao', sans-serif !important;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 14pt;
   font-weight: 600;
   margin-top: 15px;
   text-align: left;
-  color: white;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .section-light {

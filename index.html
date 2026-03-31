@@ -93,21 +93,32 @@
   <!-- End Heart Bubble Animation -->
 
   <style>
-    .qr-card .card-content { padding: 0; }
-    .qr-card p { 
-      font-size: clamp(0.55rem, 2vw, 1rem) !important;
+    .qr-card .card-content {
+      padding: 10px 5px;
+    }
+
+    /* ลด padding ของ content เพื่อเพิ่มพื้นที่รูป */
+    .qr-card p {
+      font-size: clamp(0.7rem, 2.2vw, 1rem) !important;
+      /* ปรับตัวหนังสือให้ชัดขึ้นเล็กน้อย */
       line-height: 1.4;
       word-break: break-word;
     }
-    .qr-card .subtitle {
-      font-size: clamp(0.6rem, 2.2vw, 1rem) !important;
-    }
+
+    /* ส่วนสำคัญ: ปรับขนาดรูป QR ให้ใหญ่ขึ้น */
     .qr-card img {
-      max-width: min(160px, 38vw) !important;
+      width: 90% !important;
+      /* ให้รูปกินพื้นที่ 90% ของความกว้างการ์ด */
+      max-width: 220px !important;
+      /* เพิ่มขีดจำกัดความกว้างสูงสุด */
+      margin: 0 auto 10px auto !important;
     }
+
+    /* ปรับปุ่มดาวน์โหลดให้ดูพอดีกับรูปที่ใหญ่ขึ้น */
     .qr-card a[download] {
-      font-size: clamp(0.55rem, 2vw, 0.9rem) !important;
-      padding: 6px clamp(8px, 3vw, 22px) !important;
+      width: 85%;
+      font-size: clamp(0.7rem, 2vw, 0.9rem) !important;
+      padding: 8px 5px !important;
     }
   </style>
 </head>
@@ -526,8 +537,7 @@
       <div class="container">
         <div class="columns is-multiline">
           <div class="column has-text-centered is-12 prolog">
-            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear"> เกี่ยวกับ
-              [ว่าที่เจ้าสาว] และ [ว่าที่เจ้าบ่าว]</h1>
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear"> เกี่ยวกับ [ว่าที่เจ้าสาว] และ [ว่าที่เจ้าบ่าว]</h1>
 
 
 
@@ -537,9 +547,12 @@
                 <div class="tile is-parent">
                   <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
                     <div class="content">
-                      <p class="title-foto">Foto 1</p>
-                      <p class="subtitle-foto">
-                        Pertama kali saling kenal di <a href="https://google.com" target="_blank">Sebut Nama Tempat</a>
+                      <p class="title-foto">ເນື້ອເລືອງຄວາມຮັກເລີ່ມຕົ້ນ</p>
+                      <!-- <p class="subtitle-foto">
+                        ເນື້ອເລືອງຄວາມຮັກເລີ່ມຕົ້ນ -->
+                        
+                        <!-- <a href="https://google.com" target="_blank">Sebut Nama Tempat</a> -->
+
                       </p>
                     </div>
                   </article>
@@ -548,10 +561,11 @@
                   <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
                     <div class="content">
                       <p class="title-foto">
-                        Foto 2
+                        ເນື້ອເລືອງຄວາມຮັກເລີ່ມຕົ້ນ
                       </p>
-                      <p class="subtitle-foto">
-                        Satu kantor, satu divisi, dan posisi tempat duduk saling membelakangi.
+                      <!-- <p class="subtitle-foto">
+                        ເນື້ອເລືອງຄວາມຮັກເລີ່ມຕົ້ນ -->
+                        
                       </p>
                     </div>
                   </article>
@@ -560,10 +574,10 @@
                   <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
                     <div class="content">
                       <p class="title-foto">
-                        Foto 3
+                        ເນື້ອເລືອງຄວາມຮັກເລີ່ມຕົ້ນ
                       </p>
-                      <p class="subtitle-foto">
-                        Cerita cinta dimulai
+                      <!-- <p class="subtitle-foto">
+                        ເນື້ອເລືອງຄວາມຮັກເລີ່ມຕົ້ນ -->
                       </p>
                     </div>
                   </article>
@@ -575,24 +589,24 @@
               <div class="tile is-parent">
                 <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
                   <div class="content">
-                    <p class="title-foto">Foto 4</p>
-                    <p class="subtitle-foto">Pertemuan 2 keluarga</p>
+                    <p class="title-foto">ເນື້ອເລືອງຄວາມຮັກເລີ່ມຕົ້ນ</p>
+                    <!-- <p class="subtitle-foto">ເນື້ອເລືອງຄວາມຮັກເລີ່ມຕົ້ນ</p> -->
                   </div>
                 </article>
               </div>
               <div class="tile is-parent">
                 <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
                   <div class="content">
-                    <p class="title-foto">Foto 5</p>
-                    <p class="subtitle-foto">Lamaran</p>
+                    <p class="title-foto">ເນື້ອເລືອງຄວາມຮັກເລີ່ມຕົ້ນ</p>
+                    <!-- <p class="subtitle-foto">ເນື້ອເລືອງຄວາມຮັກເລີ່ມຕົ້ນ</p> -->
                   </div>
                 </article>
               </div>
               <div class="tile is-parent">
                 <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
                   <div class="content">
-                    <p class="title-foto">Foto 6</p>
-                    <p class="subtitle-foto">Menikah</p>
+                    <p class="title-foto">ເນື້ອເລືອງຄວາມຮັກເລີ່ມຕົ້ນ</p>
+                    <!-- <p class="subtitle-foto">ເນື້ອເລືອງຄວາມຮັກເລີ່ມຕົ້ນ</p> -->
                   </div>
                 </article>
               </div>
@@ -617,13 +631,13 @@
             <h1 class="title section-title" data-aos="fade-up" style="padding-bottom: 10px; margin-bottom: 10px;">
               ຂອງຂວັນແທນໃຈ
             </h1>
-        
+
             <p class="subtitle is-6" data-aos="fade-up" style="margin-bottom: 40px;">
               ຫາກທ່ານບໍ່ສະດວກມາມອບດ້ວຍຕົນເອງ ສາມາດຮ່ວມອວຍພອນຜ່ານທາງອອນລາຍໄດ້
             </p>
-        
-            <div class="columns is-centered is-mobile">
-        
+
+            <div class="columns is-mobile is-centered" style="margin-left: -5px; margin-right: -5px;">
+
               <div class="column is-6" data-aos="zoom-in" data-aos-delay="100">
                 <div class="card qr-card"
                   style="border-radius: 16px; padding: 12px 8px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); border: 1px solid #EDD2D1; background: #fff; height: 100%;">
@@ -631,20 +645,23 @@
                     <p class="subtitle is-6 has-text-weight-bold" style="color: #BC8887; margin-bottom: 15px;">ຜ່ານບັນຊີ
                       ເຈົ້າບ່າວ (ເອ້ວ)</p>
                     <img src="image/groom-qr.png" alt="Groom QR Code"
-                      style="width: 100%; max-width: 200px; margin: 0 auto 10px auto; display: block;" id="groom-qr-img">
+                      style="width: 100%; max-width: 200px; margin: 0 auto 10px auto; display: block;"
+                      id="groom-qr-img">
                     <a href="image/groom-qr.png" download="QR-ເຈົ້າບ່າວ.png"
                       style="display: inline-block; margin: 0 auto 15px auto; background-color: #BC8887; color: white; padding: 8px 22px; border-radius: 8px; font-size: 0.9rem; text-decoration: none; cursor: pointer;">
                       ⬇ ດາວໂຫຼດ QR
                     </a>
-                    <p style="font-size: 0.85rem; color: #BC8887; font-size: 1.1rem; margin-top: 5px;">ທະນາຄານການຄ້າຕ່າງປະເທດລາວ
+                    <p style="font-size: 0.85rem; color: #BC8887; font-size: 1.1rem; margin-top: 5px;">
+                      ທະນາຄານການຄ້າຕ່າງປະເທດລາວ
                       (BCEL)</p>
-                    <p style="font-size: 0.85rem; color: #BC8887; font-size: 1.1rem; margin-top: 5px;">ຊື່ບັນຊີ: Ell Hongvanthong </p>
+                    <p style="font-size: 0.85rem; color: #BC8887; font-size: 1.1rem; margin-top: 5px;">ຊື່ບັນຊີ: Ell
+                      Hongvanthong </p>
                     <!-- <p class="has-text-weight-bold" style="color: #BC8887; font-size: 1.1rem; margin-top: 5px;">
                               XXX-XXXX-XXXXXX</p> -->
                   </div>
                 </div>
               </div>
-        
+
               <div class="column is-6" data-aos="zoom-in" data-aos-delay="300">
                 <div class="card qr-card"
                   style="border-radius: 16px; padding: 12px 8px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); border: 1px solid #EDD2D1; background: #fff; height: 100%;">
@@ -657,15 +674,17 @@
                       style="display: inline-block; margin: 0 auto 15px auto; background-color: #BC8887; color: white; padding: 8px 22px; border-radius: 8px; font-size: 0.9rem; text-decoration: none; cursor: pointer;">
                       ⬇ ດາວໂຫຼດ QR
                     </a>
-                    <p style="font-size: 0.85rem; color: #BC8887; font-size: 1.1rem; margin-top: 5px;">ທະນາຄານການຄ້າຕ່າງປະເທດລາວ
+                    <p style="font-size: 0.85rem; color: #BC8887; font-size: 1.1rem; margin-top: 5px;">
+                      ທະນາຄານການຄ້າຕ່າງປະເທດລາວ
                       (BCEL)</p>
-                    <p style="font-size: 0.85rem; color: #BC8887; font-size: 1.1rem; margin-top: 5px;">ຊື່ບັນຊີ: Tikphachan Bouasy </p>
+                    <p style="font-size: 0.85rem; color: #BC8887; font-size: 1.1rem; margin-top: 5px;">ຊື່ບັນຊີ:
+                      Tikphachan Bouasy </p>
                     <!-- <p class="has-text-weight-bold" style="color: #BC8887; font-size: 1.1rem; margin-top: 5px;">
                               XXX-XXXX-XXXXXX</p> -->
                   </div>
                 </div>
               </div>
-        
+
             </div>
           </div>
         </section>
