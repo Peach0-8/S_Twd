@@ -1,436 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="theme-color" content="#BC8887" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Undangan Pernikahan [Nama CPW] & [Nama CPP]</title>
 
-    <meta property="og:title" content="Undangan Pernikahan Nama CPW & Nama CPW - Hari, 21 April 2021">
-    <meta property="og:description" content="Undangan Pernikahan Nama CPW & Nama CPW - Sabtu, 21 April 2021 di [Nama Tempat], [Nama Kota]">
-    <meta property="og:locale" content="id_ID" />
-    <meta property="og:image" content="https://simple-wedding-invitation.dae.ng/image/samantha-gades-x40Q9jrEVT0-unsplash.jpg">
-    <meta property="og:url" content="http://simple-wedding-invitation.dae.ng/index.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <!-- Bulma Version 0.8.x-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/menikah.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
-    <script
-      src="https://kit.fontawesome.com/2828f7885a.js"
-      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-      crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.coundown.js"></script>
-    <link rel="icon" type="image/png" href="image/favicon.png" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
-    <!-- Begin Script for Countdown -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<head>
+  <meta charset="utf-8" />
+  <meta name="theme-color" content="#BC8887" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Undangan Pernikahan [Nama CPW] & [Nama CPP]</title>
 
-      gtag('config', 'UA-23064379-20');
-    </script>
-    <!-- Begin Script for Countdown -->
+  <meta property="og:title" content="Undangan Pernikahan Nama CPW & Nama CPW - Hari, 21 April 2021">
+  <meta property="og:description"
+    content="Undangan Pernikahan Nama CPW & Nama CPW - Sabtu, 21 April 2021 di [Nama Tempat], [Nama Kota]">
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:image"
+    content="https://simple-wedding-invitation.dae.ng/image/samantha-gades-x40Q9jrEVT0-unsplash.jpg">
+  <meta property="og:url" content="http://simple-wedding-invitation.dae.ng/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Bulma Version 0.8.x-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+  <script src="https://kit.fontawesome.com/2828f7885a.js"
+    integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.coundown.js"></script>
+  <link rel="icon" type="image/png" href="image/favicon.png" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
+  <!-- Begin Script for Countdown -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Github Button -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    gtag('config', 'UA-23064379-20');
+  </script>
+  <!-- Begin Script for Countdown -->
 
-    <!-- Heart Bubble Animation -->
-    <style>
-      #heart-container {
-        position: fixed;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        pointer-events: none;
-        z-index: 99999999;
-        overflow: hidden;
-      }
-      .heart-bubble {
-        position: absolute;
-        bottom: -60px;
-        font-size: 1.8rem;
+  <!-- Github Button -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <!-- Heart Bubble Animation -->
+  <style>
+    #heart-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 99999999;
+      overflow: hidden;
+    }
+
+    .heart-bubble {
+      position: absolute;
+      bottom: -60px;
+      font-size: 1.8rem;
+      opacity: 0;
+      animation: floatHeart linear forwards;
+      user-select: none;
+    }
+
+
+    @keyframes floatHeart {
+      0% {
+        transform: translateY(0) scale(0.6) rotate(-10deg);
         opacity: 0;
-        animation: floatHeart linear forwards;
-        user-select: none;
       }
-      @keyframes floatHeart {
-        0%   { transform: translateY(0) scale(0.6) rotate(-10deg); opacity: 0; }
-        10%  { opacity: 0.75; }
-        50%  { transform: translateY(-50vh) scale(1) rotate(8deg); opacity: 0.55; }
-        85%  { opacity: 0.25; }
-        100% { transform: translateY(-105vh) scale(1.1) rotate(-5deg); opacity: 0; }
+
+      10% {
+        opacity: 0.75;
       }
-    </style>
-    <!-- End Heart Bubble Animation -->
-  </head>
 
-  <body>
+      50% {
+        transform: translateY(-50vh) scale(1) rotate(8deg);
+        opacity: 0.55;
+      }
+
+      85% {
+        opacity: 0.25;
+      }
+
+      100% {
+        transform: translateY(-105vh) scale(1.1) rotate(-5deg);
+        opacity: 0;
+      }
+    }
+  </style>
+  <!-- End Heart Bubble Animation -->
+</head>
+
+<body>
 
 
-    <!-- Begin Preloader -->
-    <div class="preloader-wrapper">
-      <div class="preloader">
-        <img src="image/favicon.png" alt="Flower" />
+  <!-- Begin Preloader -->
+  <div class="preloader-wrapper">
+    <div class="preloader">
+      <img src="image/favicon.png" alt="Flower" />
+    </div>
+  </div>
+  <!-- End Preloader-->
+  <!-- Begin Header -->
+  <div class="header-wrapper" id="home">
+    <!-- Begin Hero -->
+    <section class="hero is-large">
+      <!-- Begin Mobile Nav -->
+      <nav class="navbar is-transparent is-hidden-desktop">
+        <!-- Begin Burger Menu -->
+        <div class="navbar-brand is-fixed-top">
+          <div class="navbar-burger burger" data-target="mobile-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <!-- End Burger Menu -->
+        <div id="mobile-nav" class="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a class="navbar-item" href="#Waktu">
+                Waktu
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#lokasi">
+                Lokasi
+              </a>
+            </div>
+
+            <div class="navbar-item">
+              <a class="navbar-item" href="#tentang-pasangan">
+                Tentang CPW dan CPP
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#rsvp">
+                RSVP
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Mobile Nav -->
+      <!-- Begin Hero Content-->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="subtitle">ບັດເຊີນງານແຕ່ງ</h1>
+          <h2 class="title"> S & T </h2>
+          <h4 class="subtitle tempatwaktu">
+
+            24 ເມສາ 2026
+            </br>
+            [Nama Tempat], [Nama Area]
+            </br>
+            [Nama Kota]
+
+          </h4>
+        </div>
+        <!-- Start Countdown -->
+        <div>
+          <ul id="hitungmundur">
+            <li><span class="days">00</span>
+              <p class="days_text">ວັນ</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="hours">00</span>
+              <p class="hours_text">ຊົວໂມງ</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="minutes">00</span>
+              <p class="minutes_text">ນາທີ</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="seconds">00</span>
+              <p class="seconds_text">ວິນາທີ</p>
+            </li>
+          </ul>
+          <div class="spasi">
+          </div>
+          <script type="text/javascript">
+            var now = new Date();
+            var day = now.getDate();
+            var month = now.getMonth() + 1;
+            var year = now.getFullYear() + 1;
+
+            var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+            var harih = '04/24/2026 17:00:00';
+
+            $('#hitungmundur').countdown({
+              date: harih, // TODO Date format: 07/27/2017 17:00:00
+              offset: +7, // TODO Your Timezone Offset
+              day: 'ວັນ',
+              days: 'ວັນ'
+            }, function () {
+              alert('Done!');
+            });
+          </script>
+        </div>
+        <!-- End Countdown -->
       </div>
-    </div>
-    <!-- End Preloader-->
-    <!-- Begin Header -->
-    <div class="header-wrapper" id="home">
-      <!-- Begin Hero -->
-      <section class="hero is-large">
-        <!-- Begin Mobile Nav -->
-        <nav class="navbar is-transparent is-hidden-desktop">
-          <!-- Begin Burger Menu -->
-          <div class="navbar-brand is-fixed-top">
-            <div class="navbar-burger burger" data-target="mobile-nav">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <!-- End Burger Menu -->
-          <div id="mobile-nav" class="navbar-menu">
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a class="navbar-item" href="#Waktu">
-                  Waktu
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#lokasi">
-                  Lokasi
-                </a>
-              </div>
-              
-              <div class="navbar-item">
-                <a class="navbar-item" href="#tentang-pasangan">
-                  Tentang CPW dan CPP
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#rsvp">
-                  RSVP
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <!-- End Mobile Nav -->
-        <!-- Begin Hero Content-->
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="subtitle">ບັດເຊີນງານແຕ່ງ</h1>
-            <h2 class="title"> S & T </h2>
-            <h4 class="subtitle tempatwaktu">
-              
-                24 ເມສາ 2026
-                </br>
-                [Nama Tempat], [Nama Area]
-                </br>
-                [Nama Kota]
-              
-            </h4>
-          </div>
-          <!-- Start Countdown -->       
-          <div>
-            <ul id="hitungmundur" >
-              <li><span class="days">00</span><p class="days_text">ວັນ</p></li>
-              <li class="separator">:</li>
-              <li><span class="hours">00</span><p class="hours_text">ຊົວໂມງ</p></li>
-              <li class="separator">:</li>
-              <li><span class="minutes">00</span><p class="minutes_text">ນາທີ</p></li>
-              <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">ວິນາທີ</p></li>
-            </ul>
-            <div class="spasi">
-            </div>
-            <script type="text/javascript">
-              var now = new Date();
-              var day = now.getDate();
-              var month = now.getMonth() + 1;
-              var year = now.getFullYear() + 1;
-          
-              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-              var harih = '04/24/2026 17:00:00';
+      <!-- End Hero Content-->
+      <!-- Begin Hero Menu -->
+      <div class="hero-foot ">
+        <div class="hero-foot--wrapper">
+          <div class="columns">
+            <div class="column is-12 hero-menu-desktop has-text-centered">
+              <ul>
+                <li class="is-active">
+                  <a href="#home">ໜ້າຫຼັກ</a>
+                </li>
+                <li>
+                  <a href="#Waktu">ກຳນົດການ</a>
+                </li>
+                <li>
+                  <a href="#lokasi">ສະຖານທີ່</a>
+                </li>
+                <li>
+                  <a href="#tentang-pasangan">ກ່ຽວກັບຄູ່ສົມລົດ</a>
+                </li>
 
-              $('#hitungmundur').countdown({
-                date: harih, // TODO Date format: 07/27/2017 17:00:00
-                offset: +7, // TODO Your Timezone Offset
-                day: 'ວັນ',
-                days: 'ວັນ'
-              }, function () {
-                alert('Done!');
-              });
-            </script>  
-          </div>
-          <!-- End Countdown -->
-        </div>
-        <!-- End Hero Content-->
-        <!-- Begin Hero Menu -->
-        <div class="hero-foot ">
-          <div class="hero-foot--wrapper">
-            <div class="columns">
-              <div class="column is-12 hero-menu-desktop has-text-centered">
-                <ul>
-                  <li class="is-active">
-                    <a href="#home">ໜ້າຫຼັກ</a>
-                  </li>
-                  <li>
-                    <a href="#Waktu">ກຳນົດການ</a>
-                  </li>
-                  <li>
-                    <a href="#lokasi">ສະຖານທີ່</a>
-                  </li>
-                  <li>
-                    <a href="#tentang-pasangan">ກ່ຽວກັບຄູ່ສົມລົດ</a>
-                  </li>
-
-                  <li>
-                    <a href="#rsvp">ຢືນຢັນການຮ່ວມງານ</a>
-                  </li>
-                </ul>
-              </div>
+                <li>
+                  <a href="#rsvp">ຢືນຢັນການຮ່ວມງານ</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <!-- End Hero Menu -->
-      </section>
-      <!-- End Hero -->
-    </div>
-    <!-- End Header -->
+      </div>
+      <!-- End Hero Menu -->
+    </section>
+    <!-- End Hero -->
+  </div>
+  <!-- End Header -->
 
-    <!-- Begin Main Content -->
-    <div class="main-content">
+  <!-- Begin Main Content -->
+  <div class="main-content">
     <!-- Begin regular-section-->
-     <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
-        
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim" >
+    <section class="section-light regular-section" id="tentang-pasangan" style="padding-top: 1rem; padding-bottom: 1.5rem;">
+      <div class="container">
+
+        <!-- Bismillah -->
+        <div class="has-text-centered" style="padding-bottom: 10px;" data-aos="fade-up" data-aos-easing="linear">
+          <img src="image/bismillah.png" class="bismillah" style="max-height:120px; width:auto;" alt="Bismillahirrahmaanirrahiim">
         </div>
 
-        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-          ຮຽນເຊີນທ່ານທີ່ນັບຖື
-          <br />
-          ດ້ວຍຄວາມຮັກ ແລະ ຜູກພັນ
-          <br />
-          ພວກເຮົາຂໍຮຽນເຊີນທ່ານເຂົ້າຮ່ວມງານມຸງຄຸນສົມລົດຂອງພວກເຮົາ
-        </p>
+        <!-- ====== Responsive Family Section ====== -->
+        <style>
+          .family-section-top {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0;
+            position: relative;
+            padding-bottom: 20px;
+          }
+          .family-col {
+            flex: 1;
+            text-align: center;
+            padding: 0 16px;
+            min-width: 0;
+          }
+          .family-col-center {
+            flex: 0 0 80px;
+            min-width: 60px;
+          }
+          .family-heading {
+            font-weight: 700;
+            color: #996E6D;
+            font-size: clamp(0.42rem, 1.9vw, 0.95rem);
+            margin-bottom: 8px;
+            white-space: nowrap;
+            text-align: center;
+          }
+          .family-names-list {
+            display: inline-block;
+            text-align: left;
+            font-size: clamp(0.38rem, 1.5vw, 0.82rem);
+            color: #333;
+            white-space: nowrap;
+          }
+          .family-names-list span {
+            display: block;
+            line-height: 2;
+          }
+          .family-names-wrap {
+            text-align: center;
+          }
+          .divider-line {
+            border-top: 1px solid #D8A9A8;
+            margin: 0 12px;
+          }
+          .st-float-wrap {
+            position: absolute;
+            left: 50%;
+            bottom: -42px;
+            transform: translateX(-50%);
+            z-index: 10;
+            background: white;
+            padding: 0 6px;
+          }
+          .family-section-bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 52px;
+            gap: 0;
+          }
+          .couple-col {
+            flex: 1;
+            text-align: center;
+            min-width: 0;
+            padding: 0 4px;
+          }
+          .couple-name-text {
+            font-family: 'Noto Serif Lao', serif;
+            font-size: clamp(0.65rem, 2.8vw, 1.5rem);
+            color: #996E6D;
+            line-height: 1.3;
+            white-space: nowrap;
+          }
+          .couple-nick {
+            font-weight: bold;
+            font-size: clamp(0.65rem, 2.2vw, 1rem);
+            color: #996E6D;
+            margin: 3px 0;
+          }
+          .couple-role {
+            font-style: italic;
+            font-size: clamp(0.6rem, 1.8vw, 0.9rem);
+            color: #555;
+          }
+          .couple-logo-col {
+            flex: 0 0 clamp(60px, 12vw, 110px);
+            min-width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        </style>
 
-        <span class="space40px"></span>
-        <span class="space40px"></span>
+        <div style="position: relative;">
+          <!-- แถวบน: เจ้าภาพ -->
+          <div class="family-section-top">
+            <div class="family-col" data-aos="fade-right">
+              <p class="family-heading">ເຈົ້າພາບຝ່າຍຊາຍ</p>
+              <div class="family-names-wrap"><div class="family-names-list">
+                <span>ທ່ານ ຄຳຜິດ</span>
+                <span>ທ່ານ ແກ້ວ</span>
+                <span>ທ່ານ ຄຳເມີຍ</span>
+                <span>ທ່ານ ສິດທະພອນ</span>
+                <span>ທ່ານ ແກ້ວອຸດົມ</span>
+              </div></div>
+            </div>
+            <div class="family-col-center"></div>
+            <div class="family-col" data-aos="fade-left">
+              <p class="family-heading">ເຈົ້າພາບຝ່າຍຍິງ</p>
+              <div class="family-names-wrap"><div class="family-names-list">
+                <span>ທ່ານ ສົມໝາຍ</span>
+                <span>ທ່ານ ຄຳຮູ້</span>
+                <span>ທ່ານ ສີພອນ</span>
+                <span>ທ່ານ ທະວີ</span>
+                <span>ທ່ານ ວິໄຊ</span>
+              </div></div>
+            </div>
+          </div>
 
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <div class="nama-lengkap" >
-            ທ.ສຸກປະເສີດ
+          <!-- ST logo ลอยคร่อมเส้น -->
+          <div class="st-float-wrap">
+            <img src="image/ST.png" style="height: clamp(60px, 10vw, 88px); width: auto; display: block;" alt="S & T">
           </div>
-          <div class="ampersand">&</div>
-          <div class="nama-lengkap">
-            ນ. ຕິກພະຈັນ
-          </div>
-           
+          <div class="divider-line"></div>
         </div>
-        <span class="space40px"></span>
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+
+        <!-- แถวล่าง: ชื่อเจ้าบ่าว-เจ้าสาว -->
+        <div class="family-section-bottom">
+          <div class="couple-col" data-aos="fade-right">
+            <div class="couple-name-text">ທ້າວ ແອນດີ້ ຄຳບຸນມີ</div>
+            <p class="couple-nick">( ເອັນ )</p>
+            <p class="couple-role">ຜູ້ເປັນລູກ ແລະ ຫຼານຊາຍ</p>
+          </div>
+          <div class="couple-logo-col">
+            <img src="image/ST_transparent.png" style="width: clamp(55px, 11vw, 110px); height: auto;" alt="S&T">
+          </div>
+          <div class="couple-col" data-aos="fade-left">
+            <div class="couple-name-text">ນ. ຕິກພະຈັນ ກິ່ນພະຄອນ</div>
+            <p class="couple-nick">( ໂບນັດ )</p>
+            <p class="couple-role">ຜູ້ເປັນລູກ ແລະ ຫຼານສາວ</p>
+          </div>
         </div>
-        <span class="space40px"></span>
-        <span class="space40px"></span>
-      </section>
-      <!-- End regular-section-->    
-      
-      <!-- Begin Waktu Section -->
-      <section class="section-dark" id="Waktu">
-        <div class="container">
 
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">ກຳນົດການ</h1>
-          </div>
-          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-            <div
-              class="column is-4 has-vertically-aligned-content">
-            
-              <p class="is-larger has-text-centered">
-                  <div class="waktu tanggal-hari has-text-centered">ວັນສຸກ</div> 
-                  <div class="waktu tanggal-angka has-text-centered">24</div>
-                  <div class="waktu tanggal-bulan has-text-centered">ເມສາ 2026</div>
-              </p>
-            
-            </div>
-            <div class="column is-4 has-vertically-aligned-content">
-            
-              <p class="waktu is-larger has-text-centered">
-                ພິທີສູ່ຂໍ&ບາສີ
-                <br>
-                <strong>8:00</strong>
-              </p>
-            
-            </div>
+        <div class="has-text-centered" style="padding-top: 16px;">
+          <img src="image/divider-leaves.png" class="divider" alt="~~~">
+        </div>
+      </div>
+    </section>
+    <!-- End regular-section-->
 
-            <div class="column is-4 has-vertically-aligned-content">
-              
-              <h1 class="waktu is-larger has-text-centered">
-                ງານລ້ຽງສ້າງສັນ
-                <br>
-                <strong>19.00 - 22:30</strong>
-              </h1>
-              
-              
-            </div>
+    <!-- Begin Waktu Section -->
+    <section class="section-dark" id="Waktu">
+      <div class="container">
+
+        <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+          <h1 class="title has-text-centered section-title">ກຳນົດການ</h1>
+        </div>
+        <div class="columns is-multiline is-mobile" data-aos="fade-up" data-aos-easing="linear">
+          <div class="column is-4 has-vertically-aligned-content">
+
+            <p class="is-larger has-text-centered">
+            <div class="waktu tanggal-hari has-text-centered">ວັນສຸກ</div>
+            <div class="waktu tanggal-angka has-text-centered">24</div>
+            <div class="waktu tanggal-bulan has-text-centered">ເມສາ 2026</div>
+            </p>
 
           </div>
+          <div class="column is-4 has-vertically-aligned-content">
+
+            <p class="waktu is-larger has-text-centered">
+              ພິທີສູ່ຂໍ&ບາສີ
+              <br>
+              <strong>8:00</strong>
+            </p>
+
+          </div>
+
+          <div class="column is-4 has-vertically-aligned-content">
+
+            <h1 class="waktu is-larger has-text-centered">
+              ງານລ້ຽງສ້າງສັນ
+              <br>
+              <strong>19.00 - 22:30</strong>
+            </h1>
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="space40px"></div>
+      <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+        <a href="https://calendar.app.google/SaPqj8QtMPDyGnqT8" target="_blank" class="button has-tooltip btn-cta"
+          data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
+          <i class="far fa-calendar-plus"></i>
+          &nbsp;&nbsp;ເພີ່ມເຂົ້າປະຕິທິນ
+        </a>
+      </div>
+    </section>
+    <!-- End Waktu Content -->
+
+    <!-- Begin Lokasi Section -->
+    <section class="section-darker" id="lokasi">
+      <div class="container">
+        <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+          <h1 class="title has-text-centered section-title">ສະຖານທີ່</h1>
+          <p class="tempat is-larger has-text-centered">
+            <strong>ຊື່ສະຖານທີ່ ຫຼື ເຮືອນເຈົ້າພາບ</strong>
+            <br>
+            ບ້ານ, ເມືອງ, ແຂວງ (ໃສ່ທີ່ຢູ່ຂອງທ່ານຢູ່ບ່ອນນີ້)
+          </p>
+        </div>
+        <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3851.847665009578!2d105.8262144!3d15.1117222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3114f9005090f943%3A0x5fd93bf468267bb6!2z4Lqr4Lq74LqH4Lqn4Lqx4LqZ4LqE4Lqz!5e0!3m2!1sth!2s!4v1774891294700!5m2!1sth!2s"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+          </iframe>
         </div>
         <div class="space40px"></div>
-        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-          <a href="https://calendar.app.google/SaPqj8QtMPDyGnqT8" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
-            <i class="far fa-calendar-plus"></i>
-            &nbsp;&nbsp;ເພີ່ມເຂົ້າປະຕິທິນ
+        <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+          <a href="https://maps.app.goo.gl/TF4LCXTf3MCzcQF79" class="button btn-cta" target="_blank" data-aos="zoom-in">
+            <i class="far fa-directions"></i>
+            &nbsp;&nbsp;ເບິ່ງແຜนທີ່ Google Maps
           </a>
         </div>
-      </section>
-      <!-- End Waktu Content -->
-
-      <!-- Begin Lokasi Section -->
-      <section class="section-darker" id="lokasi" >
-        <div class="container">
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">ສະຖານທີ່</h1>
-            <p class="tempat is-larger has-text-centered">
-              <strong>ຊື່ສະຖານທີ່ ຫຼື ເຮືອນເຈົ້າພາບ</strong>
-              <br>
-              ບ້ານ, ເມືອງ, ແຂວງ (ໃສ່ທີ່ຢູ່ຂອງທ່ານຢູ່ບ່ອນນີ້)
-            </p>
-          </div>
-          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3851.847665009578!2d105.8262144!3d15.1117222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3114f9005090f943%3A0x5fd93bf468267bb6!2z4Lqr4Lq74LqH4Lqn4Lqx4LqZ4LqE4Lqz!5e0!3m2!1sth!2s!4v1774891294700!5m2!1sth!2s"             
-              width="100%"
-              height="450" 
-              frameborder="0" 
-              style="border:0;" 
-              allowfullscreen="">
-            </iframe>
-          </div>
-          <div class="space40px"></div>
-          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <a href="https://maps.app.goo.gl/TF4LCXTf3MCzcQF79" class="button btn-cta" target="_blank" data-aos="zoom-in">
-              <i class="far fa-directions"></i>
-              &nbsp;&nbsp;ເບິ່ງແຜนທີ່ Google Maps
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- End Lokasi Content -->
-
-      <!-- Begin Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
-      <section class="section-light regular-section is-fullheight" id="tentang-pasangan">
-        <div class="container">
-          <div class="columns is-multiline">  
-          <div class="column has-text-centered is-12 prolog">
-            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear"> เกี่ยวกับ [ว่าที่เจ้าสาว] และ [ว่าที่เจ้าบ่าว]</h1>
-            
-
-          
-          <!-- IMAGES -->  
-        <div class=" tile">
-          <div class="tile is-ancestor">
-          <div class="tile is-parent">
-            <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">
-                <p class="title-foto">Foto 1</p>
-                <p class="subtitle-foto">
-                  Pertama kali saling kenal di <a href="https://google.com" target="_blank">Sebut Nama Tempat</a>
-                </p>
-              </div>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">
-                <p class="title-foto">
-                  Foto 2
-                </p>
-                <p class="subtitle-foto">
-                  Satu kantor, satu divisi, dan posisi tempat duduk saling membelakangi.
-                </p>   
-              </div>            
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">  
-                <p class="title-foto">
-                  Foto 3
-                </p>
-                <p class="subtitle-foto">
-                  Cerita cinta dimulai
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
       </div>
-      <div class="space24px"></div>
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Foto 4</p>
-              <p class="subtitle-foto">Pertemuan 2 keluarga</p>
+    </section>
+    <!-- End Lokasi Content -->
+
+    <!-- Begin Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
+    <section class="section-light regular-section is-fullheight" id="tentang-pasangan">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column has-text-centered is-12 prolog">
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear"> เกี่ยวกับ
+              [ว่าที่เจ้าสาว] และ [ว่าที่เจ้าบ่าว]</h1>
+
+
+
+            <!-- IMAGES -->
+            <div class=" tile">
+              <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                  <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
+                    <div class="content">
+                      <p class="title-foto">Foto 1</p>
+                      <p class="subtitle-foto">
+                        Pertama kali saling kenal di <a href="https://google.com" target="_blank">Sebut Nama Tempat</a>
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
+                    <div class="content">
+                      <p class="title-foto">
+                        Foto 2
+                      </p>
+                      <p class="subtitle-foto">
+                        Satu kantor, satu divisi, dan posisi tempat duduk saling membelakangi.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
+                    <div class="content">
+                      <p class="title-foto">
+                        Foto 3
+                      </p>
+                      <p class="subtitle-foto">
+                        Cerita cinta dimulai
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
             </div>
-          </article>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Foto 5</p>
-              <p class="subtitle-foto">Lamaran</p>
+            <div class="space24px"></div>
+            <div class="tile is-ancestor">
+              <div class="tile is-parent">
+                <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
+                  <div class="content">
+                    <p class="title-foto">Foto 4</p>
+                    <p class="subtitle-foto">Pertemuan 2 keluarga</p>
+                  </div>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
+                  <div class="content">
+                    <p class="title-foto">Foto 5</p>
+                    <p class="subtitle-foto">Lamaran</p>
+                  </div>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
+                  <div class="content">
+                    <p class="title-foto">Foto 6</p>
+                    <p class="subtitle-foto">Menikah</p>
+                  </div>
+                </article>
+              </div>
             </div>
-          </article>
-        </div>
-        <div class="tile is-parent">              
-          <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Foto 6</p>
-              <p class="subtitle-foto">Menikah</p>
-            </div>
-          </article>
-        </div>
-      </div>   
-          <!-- IMAGES -->
-          <div class="space40px"></div>
+            <!-- IMAGES -->
+            <div class="space40px"></div>
             <div data-aos="fade-up" data-aos-easing="linear">
               <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
-            </div> 
+            </div>
             <div class="space40px"></div>
             <div class="space40px"></div>
 
           </div>
         </div>
-      </section>
-      <!-- End Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
+    </section>
+    <!-- End Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
 
-      <!-- Begin RSVP Content -->
-      <section class="section-dark contact" id="rsvp">
-        <div class="container">
-          <div class="columns is-multiline">          
-            <div class="column is-12 prolog">
-              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">ການຢືນຢັນການຮ່ວມງານ</h1>
-            </div>
-            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-              <p class="h2 subtitle">
-                ມັນເປັນກຽດ ແລະ ຄວາມສຸກຢ່າງຍິ່ງສຳລັບພວກເຮົາ
-                <br>
-                ຖ້າຫາກທ່ານສາມາດມາຮ່ວມງານ ແລະ ອວຍພອນໃຫ້ແກ່ພວກເຮົາ.
-                <br>
-                <br>
-                ຖ້າທ່ານສາມາດມາຮ່ວມງານໄດ້ ກະລຸນາແຈ້ງໃຫ້ພວກເຮົາຊາບລ່ວງໜ້າ.
-                <br>
-                <!-- Informasi: Di meja penerima tamu akan kami sediakan hand sanitizer dan pemeriksaan suhu tubuh.
+    <!-- Begin RSVP Content -->
+    <section class="section-dark contact" id="rsvp">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-12 prolog">
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">
+              ການຢືນຢັນການຮ່ວມງານ</h1>
+          </div>
+          <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+            <p class="h2 subtitle">
+              ມັນເປັນກຽດ ແລະ ຄວາມສຸກຢ່າງຍິ່ງສຳລັບພວກເຮົາ
+              <br>
+              ຖ້າຫາກທ່ານສາມາດມາຮ່ວມງານ ແລະ ອວຍພອນໃຫ້ແກ່ພວກເຮົາ.
+              <br>
+              <br>
+              ຖ້າທ່ານສາມາດມາຮ່ວມງານໄດ້ ກະລຸນາແຈ້ງໃຫ້ພວກເຮົາຊາບລ່ວງໜ້າ.
+              <br>
+              <!-- Informasi: Di meja penerima tamu akan kami sediakan hand sanitizer dan pemeriksaan suhu tubuh.
                 <br>
                 <br>
                 Jika tidak memungkinkan untuk hadir di pernikahan kami,tidak mengapa,
@@ -440,28 +596,30 @@
                 <br>
                 Stay safe & jaga kesehatan ya :)
                 </p> -->
-     
-              <a href="https://www.facebook.com/tikphachane.bouasy" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+
+              <a href="https://www.facebook.com/tikphachane.bouasy" class="button btn-whatsapp" target="_blank"
+                data-aos="zoom-in">
                 <i class="fab fa-whatsapp"></i>
                 &nbsp;&nbsp;ແຈ້ງເຈົ້າສາວ
               </a>
-              
 
-          
-              <a href="https://www.facebook.com/ell.hongvanthong" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+
+
+              <a href="https://www.facebook.com/ell.hongvanthong" class="button btn-whatsapp" target="_blank"
+                data-aos="zoom-in">
                 <i class="fab fa-whatsapp"></i>
                 &nbsp;&nbsp;ແຈ້ງເຈົ້າບ່າວ
-              </a >
-              <div class="space40px"></div>
+              </a>
+            <div class="space40px"></div>
 
-              <div class="space40px"></div>
-              <div data-aos="fade-up" data-aos-easing="linear">
-                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-              </div>
-              <div class="space40px"></div>
-              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
-                ດ້ວຍຄວາມນັບຖືຢ່າງສູງ
-                <!-- <br>
+            <div class="space40px"></div>
+            <div data-aos="fade-up" data-aos-easing="linear">
+              <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+            </div>
+            <div class="space40px"></div>
+            <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
+              ດ້ວຍຄວາມນັບຖືຢ່າງສູງ
+              <!-- <br>
                 <a class="instagram":" href="https://instagram.com/instagramaccount" target="_blank" alt="Instagram CPW">
                   <i class="fab fa-instagram"></i> @instagramaccount
                 </a>
@@ -469,94 +627,95 @@
                 <a class="instagram" href="https://instagram.com/instagramaccount" target="_blank" alt="Instagram CPP">
                   <i class="fab fa-instagram"></i> @instagramaccount
                 </a> -->
-              </p>
+            </p>
 
-            </div>
- 
-         </div>
+          </div>
+
         </div>
-      </section>
-      <!-- End RSVP Content -->
-    </div>
-    <!-- End Main Content -->
-
-    <!-- Begin Footer -->
-    <div class="footer">
-      <div class="container">
-        <a href="https://www.facebook.com/oshii.hvs/" class="has-vertically-align">
-          <p class="has-vertically-align"> &copy By Phitsamay </p>
-        </a>
-        <a href="https://www.facebook.com/oshii.hvs/" class="has-vertically-align">
-          <img src="image/facebook.png" alt="Made with Bulma">
-          <p class="has-vertically-align"> Oshii </p>
-        </a>
-        <a href="https://www.instagram.com/_oshii_annie/">
-          <img src="image/intagram.png" alt="Deploy with Netlify"/>
-          <p class="has-vertically-align"> _oshii_annie </p>
-        </a>
       </div>
+    </section>
+    <!-- End RSVP Content -->
+  </div>
+  <!-- End Main Content -->
+
+  <!-- Begin Footer -->
+  <div class="footer">
+    <div class="container">
+      <a href="https://www.facebook.com/oshii.hvs/" class="has-vertically-align">
+        <p class="has-vertically-align"> &copy By Phitsamay </p>
+      </a>
+      <a href="https://www.facebook.com/oshii.hvs/" class="has-vertically-align">
+        <img src="image/facebook.png" alt="Made with Bulma">
+        <p class="has-vertically-align"> Oshii </p>
+      </a>
+      <a href="https://www.instagram.com/_oshii_annie/">
+        <img src="image/intagram.png" alt="Deploy with Netlify" />
+        <p class="has-vertically-align"> _oshii_annie </p>
+      </a>
     </div>
-    <!-- End Footer -->
+  </div>
+  <!-- End Footer -->
 
-    <!-- Heart Bubble Script -->
-    <script>
-      (function () {
-        var container = document.createElement('div');
-        container.id = 'heart-container';
-        document.body.appendChild(container);
+  <!-- Heart Bubble Script -->
+  <script>
+    (function () {
+      var container = document.createElement('div');
+      container.id = 'heart-container';
+      document.body.appendChild(container);
 
-        var pinkShades = [
-          'rgba(255,182,193,0.7)',
-          'rgba(255,105,180,0.55)',
-          'rgba(255,20,147,0.45)',
-          'rgba(220,130,143,0.65)',
-          'rgba(255,200,210,0.8)',
-        ];
+      var pinkShades = [
+        'rgba(255,182,193,0.7)',
+        'rgba(255,105,180,0.55)',
+        'rgba(255,20,147,0.45)',
+        'rgba(220,130,143,0.65)',
+        'rgba(255,200,210,0.8)',
+      ];
 
-        function heartSVG(color) {
-          return "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 29.6'><path fill='" + encodeURIComponent(color) + "' d='M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,16,21.2,16,21.2S32,17.8,32,8.4C32,3.8,28.2,0,23.6,0z'/></svg>";
-        }
+      function heartSVG(color) {
+        return "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 29.6'><path fill='" + encodeURIComponent(color) + "' d='M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,16,21.2,16,21.2S32,17.8,32,8.4C32,3.8,28.2,0,23.6,0z'/></svg>";
+      }
 
-        function spawnHeart() {
-          var el = document.createElement('img');
-          var color = pinkShades[Math.floor(Math.random() * pinkShades.length)];
-          el.src = heartSVG(color);
-          el.className = 'heart-bubble';
+      function spawnHeart() {
+        var el = document.createElement('img');
+        var color = pinkShades[Math.floor(Math.random() * pinkShades.length)];
+        el.src = heartSVG(color);
+        el.className = 'heart-bubble';
 
-          var size  = 22 + Math.random() * 28;
-          var left  = 5  + Math.random() * 90;
-          var dur   = 3.5 + Math.random() * 3;
-          var delay = Math.random() * 2;
+        var size = 22 + Math.random() * 28;
+        var left = 5 + Math.random() * 90;
+        var dur = 3.5 + Math.random() * 3;
+        var delay = Math.random() * 2;
 
-          el.style.width             = size + 'px';
-          el.style.left              = left + '%';
-          el.style.animationDuration = dur  + 's';
-          el.style.animationDelay    = delay + 's';
+        el.style.width = size + 'px';
+        el.style.left = left + '%';
+        el.style.animationDuration = dur + 's';
+        el.style.animationDelay = delay + 's';
 
-          container.appendChild(el);
-          setTimeout(function () { el.remove(); }, (dur + delay + 0.5) * 1000);
-        }
+        container.appendChild(el);
+        setTimeout(function () { el.remove(); }, (dur + delay + 0.5) * 1000);
+      }
 
-        var total = 28, launched = 0;
-        var burst = setInterval(function () {
-          spawnHeart();
-          launched++;
-          if (launched >= total) clearInterval(burst);
-        }, 100);
-      })();
-    </script>
-    <!-- End Heart Bubble Script -->
+      var total = 28, launched = 0;
+      var burst = setInterval(function () {
+        spawnHeart();
+        launched++;
+        if (launched >= total) clearInterval(burst);
+      }, 100);
+    })();
+  </script>
+  <!-- End Heart Bubble Script -->
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/menikah.js"></script>
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        easing: "ease-out",
-        duration: 800,
-      });
-    </script>
-  </body>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menikah.js"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: "ease-out",
+      duration: 800,
+    });
+  </script>
+</body>
+
 </html>

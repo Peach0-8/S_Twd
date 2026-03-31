@@ -657,3 +657,88 @@ body.preloader-site {
   text-align: center;
   padding: 10px;
 }
+
+/* ========================================================
+   RESPONSIVE LOCK
+   ป้องกัน layout เพี้ยนบน mobile / tablet
+   ======================================================== */
+
+/* 1. ล็อก .columns ไม่ให้ wrap เป็นแนวตั้งบนทุกขนาดจอ
+      (เหมือนใส่ is-mobile ทั่วทั้งหน้า) */
+.columns:not(.is-multiline) {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+}
+
+/* 2. แก้ hero background-attachment: fixed ที่แตกบน iOS Safari */
+@supports (-webkit-overflow-scrolling: touch) {
+  .hero {
+    background-attachment: scroll !important;
+  }
+}
+
+/* 3. ป้องกันตัวหนังสือใหญ่เกินบนจอเล็ก */
+@media (max-width: 768px) {
+  .hero .title      { font-size: 3rem !important; }
+  .tanggal-angka    { font-size: 3rem !important; }
+  .nama-lengkap     { font-size: 2rem !important; line-height: 2.2rem !important; }
+  .waktu            { font-size: 1.1rem !important; }
+  .intro-script-title { font-size: 2.4rem !important; }
+  .intro-couple-name  { font-size: 2rem !important; }
+  .intro-couple-amp   { font-size: 3rem !important; }
+}
+
+/* 4. ป้องกัน btn ล้นออกนอกจอบน mobile */
+@media (max-width: 480px) {
+  .btn-whatsapp,
+  .btn-cta {
+    width: 90% !important;
+    margin: 0.5rem auto !important;
+    display: block !important;
+  }
+  .badseun-card { padding: 20px 12px !important; }
+}
+
+
+
+
+/* ===== Family section - always 2 columns, clean layout ===== */
+
+/* container: equal height columns */
+.family-cols {
+  align-items: stretch !important;
+}
+.family-cols > .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8px;
+}
+
+/* รายชื่อครอบครัว - ฟอนต์ responsive clamp */
+.family-list {
+  font-size: clamp(0.6rem, 1.5vw, 0.85rem);
+  line-height: 1.7;
+  margin-bottom: 16px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+/* ชื่อคู่บ่าวสาว - clamp ไม่ให้ล้น */
+.couple-name-card {
+  font-size: clamp(0.9rem, 2.8vw, 1.5rem) !important;
+  color: #b784a7 !important;
+  line-height: 1.3 !important;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+.bismillah {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 200px; /* ปรับขนาดความสูงตามความเหมาะสม */
+  vertical-align: middle;
+}
