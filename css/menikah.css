@@ -290,6 +290,7 @@ body.preloader-site {
 }
 
 .hero .subtitle {
+  font-family: 'Noto Sans Lao', sans-serif;
   padding: 35px;
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.3rem;
@@ -949,7 +950,7 @@ article.tile.is-child {
 }
 
 .title-foto {
-  font-family: 'Cormorant Garamond', serif !important;
+  font-family: 'Noto Sans Lao', sans-serif;
   font-size: 1.35rem !important;
   font-style: italic;
   font-weight: 600; /* ปรับให้ตัวหนาขึ้นนิดนึงจะได้อ่านง่าย */
@@ -1450,3 +1451,42 @@ article.tile.is-child {
 }
 
 
+
+
+/* ============================================================
+   FIX: ป้องกัน AOS จาก layout shift ที่กระทบปุ่มหัวใจ
+   ============================================================ */
+
+/* ทุก element ที่มี data-aos จะไม่สร้าง stacking context ใหม่
+   ที่จะไป interrupt position:fixed ของปุ่มหัวใจ */
+[data-aos] {
+  transform-style: flat !important;
+  backface-visibility: hidden;
+}
+
+/* family-section: ป้องกัน scroll jump เมื่อ AOS เริ่ม/จบ */
+.family-section-top,
+.family-section-bottom,
+.family-col,
+.couple-col {
+  /* กัน reflow ที่ทำให้หน้า jump */
+  contain: layout;
+  /* ป้องกัน stacking context ที่ทับ fixed element */
+  transform-style: flat;
+}
+
+/* ป้องกัน AOS initial state (opacity:0 + translateY) จากการสร้าง
+   stacking context ที่ทับ position:fixed */
+[data-aos="fade-right"],
+[data-aos="fade-left"],
+[data-aos="fade-up"],
+[data-aos="zoom-in"] {
+  will-change: opacity, transform;
+  /* Flat transform context — cannot create new stacking layer */
+  transform-style: flat !important;
+}
+
+/* AOS ที่ animate เสร็จแล้ว — reset will-change เพื่อประหยัด memory */
+[data-aos].aos-animate {
+  will-change: auto;
+}
