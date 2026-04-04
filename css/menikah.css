@@ -380,17 +380,11 @@ ul#hitungmundur {
   margin: 28px auto 8px;
   padding: 0;
   display: flex;
-<<<<<<< HEAD
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-end;
   gap: 0;
   width: 100%;
-=======
-  justify-content: center;
-  align-items: flex-end;
-  gap: 0;
->>>>>>> 205bb689e6337d3c9c4e34403b59f7f0e5bc507b
 }
 
 ul#hitungmundur li {
@@ -401,7 +395,6 @@ ul#hitungmundur li:not(.separator) {
   background: rgba(255, 255, 255, 0.14);
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 14px;
-<<<<<<< HEAD
   padding: 10px clamp(6px, 2.5vw, 18px) 8px;
   margin: 0 clamp(2px, 1vw, 6px);
   backdrop-filter: blur(6px);
@@ -410,15 +403,6 @@ ul#hitungmundur li:not(.separator) {
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.25);
   transition: transform 0.3s var(--ease-bounce);
   flex-shrink: 1;
-=======
-  padding: 10px 18px 8px;
-  margin: 0 6px;
-  backdrop-filter: blur(6px);
-  min-width: 68px;
-  text-align: center;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.25);
-  transition: transform 0.3s var(--ease-bounce);
->>>>>>> 205bb689e6337d3c9c4e34403b59f7f0e5bc507b
 }
 
 ul#hitungmundur li:not(.separator):hover {
@@ -427,11 +411,7 @@ ul#hitungmundur li:not(.separator):hover {
 
 ul#hitungmundur li span {
   font-family: 'Cormorant Garamond', serif;
-<<<<<<< HEAD
   font-size: clamp(1.4rem, 5vw, 2.8rem);
-=======
-  font-size: 2.8rem;
->>>>>>> 205bb689e6337d3c9c4e34403b59f7f0e5bc507b
   font-weight: 600;
   line-height: 1;
   color: #fff;
@@ -448,7 +428,6 @@ ul#hitungmundur li p {
 }
 
 ul#hitungmundur li.separator {
-<<<<<<< HEAD
   font-size: clamp(1.2rem, 4vw, 2.2rem);
   color: rgba(255, 255, 255, 0.55);
   line-height: 1;
@@ -456,14 +435,6 @@ ul#hitungmundur li.separator {
   margin: 0 clamp(1px, 0.5vw, 2px);
   animation: blinkColon 1.5s step-end infinite;
   flex-shrink: 0;
-=======
-  font-size: 2.2rem;
-  color: rgba(255, 255, 255, 0.55);
-  line-height: 1;
-  padding-bottom: 22px;
-  margin: 0 2px;
-  animation: blinkColon 1.5s step-end infinite;
->>>>>>> 205bb689e6337d3c9c4e34403b59f7f0e5bc507b
 }
 
 @keyframes blinkColon {
@@ -531,7 +502,6 @@ ul#hitungmundur li.separator {
   position: relative;
 }
 
-<<<<<<< HEAD
 @media (max-width: 768px) {
   .main-content .section-light {
     padding-left: 14px;
@@ -543,8 +513,6 @@ ul#hitungmundur li.separator {
   }
 }
 
-=======
->>>>>>> 205bb689e6337d3c9c4e34403b59f7f0e5bc507b
 /* gold line top on sections */
 .main-content .section-light::before,
 .main-content .section-dark::before {
@@ -706,7 +674,6 @@ ul#hitungmundur li.separator {
 ══════════════════════════════════════════ */
 
 
-<<<<<<< HEAD
 /* ══════════════════════════════════════════
    FAMILY TWO-COL — layout ຄືໃນບັດຈິງ
 ══════════════════════════════════════════ */
@@ -745,53 +712,6 @@ ul#hitungmundur li.separator {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
-=======
-.family-section-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 0;
-  position: relative;
-  padding-bottom: 20px;
-}
-
-.family-col {
-  flex: 1;
-  text-align: center;
-  padding: 0 16px;
-  min-width: 0;
-}
-
-.family-col-center {
-  flex: 0 0 80px;
-  min-width: 60px;
-}
-
-.family-heading {
-  font-weight: 700;
-  color: #996E6D;
-  font-size: 15px;
-  margin-bottom: 8px;
-  white-space: nowrap;
-  text-align: center;
-}
-
-.family-names-list {
-  display: inline-block;
-  text-align: left;
-  font-size: 13px;
-  color: #333;
-  white-space: nowrap;
-}
-
-.family-names-list span {
-  display: block;
-  line-height: 2;
-}
-
-.family-names-wrap {
->>>>>>> 205bb689e6337d3c9c4e34403b59f7f0e5bc507b
   text-align: center;
 }
 
@@ -804,11 +724,7 @@ ul#hitungmundur li.separator {
 .st-float-wrap {
   position: absolute;
   left: 50%;
-<<<<<<< HEAD
   bottom: -75px;
-=======
-  bottom: -65px;
->>>>>>> 205bb689e6337d3c9c4e34403b59f7f0e5bc507b
   transform: translateX(-50%);
   z-index: 10;
   background: transparent;
@@ -828,11 +744,7 @@ ul#hitungmundur li.separator {
   flex: 1;
   text-align: center;
   min-width: 0;
-<<<<<<< HEAD
   padding: 0 10px;
-=======
-  padding: 0 4px;
->>>>>>> 205bb689e6337d3c9c4e34403b59f7f0e5bc507b
   /* เพิ่ม 3 บรรทัดนี้ เพื่อบังคับให้ทุกข้อความในฝั่งตัวเองจัดเรียงกึ่งกลางแนวตั้งเป๊ะๆ */
   display: flex;
   flex-direction: column;
@@ -1504,14 +1416,8 @@ article.tile.is-child {
 }
 
 @media (max-width: 768px) {
-<<<<<<< HEAD
   .family-col-center {
     display: none !important; /* ซ่อนพื้นที่ว่างตรงกลางไปเลยบนมือถือ */
-=======
-  .hero .title {
-    font-size: 3rem !important;
-  }
->>>>>>> 205bb689e6337d3c9c4e34403b59f7f0e5bc507b
 
   .tanggal-angka {
     font-size: 3rem !important;
@@ -1591,9 +1497,6 @@ article.tile.is-child {
 /* AOS ที่ animate เสร็จแล้ว — reset will-change เพื่อประหยัด memory */
 [data-aos].aos-animate {
   will-change: auto;
-<<<<<<< HEAD
 }
 
-=======
->>>>>>> 205bb689e6337d3c9c4e34403b59f7f0e5bc507b
 }
